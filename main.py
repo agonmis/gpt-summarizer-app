@@ -28,6 +28,7 @@ def _get_api_key() -> str:
 
     raise RuntimeError("OPENAI_API_KEY ist nicht gesetzt (weder st.secrets, ENV noch .env).")
 
+
 # WICHTIG: Key direkt an den Client übergeben
 client = OpenAI(api_key=_get_api_key())
 
